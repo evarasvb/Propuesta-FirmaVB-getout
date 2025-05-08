@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación FirmaVB 2025: ¡Desata Tu Potencial con Datos Reales!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.5s ease;
+        }
+        .slide {
+            display: none; /* Hidden by default */
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            min-height: calc(100vh - 100px); /* Adjust height to leave space for nav */
+            width: 100%;
+            box-sizing: border-box; 
+        }
+        .slide.active {
+            display: flex; /* Show active slide */
+            opacity: 1;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .slide-content-wrapper {
+            max-height: calc(100vh - 180px); /* Max height for content, leaving space for title and nav */
+            overflow-y: auto; /* Allow scrolling for content that overflows */
+            padding: 1rem; 
+            width: 100%; 
+        }
+        .nav-button {
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .custom-list li::before {
+            content: "✓"; 
+            color: #EC4899; /* Corporate Pink for checkmarks */
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .data-highlight {
+            color: #FBBF24; /* Tailwind amber-400 - kept for strong data emphasis */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .corporate-blue-text { color: #4F46E5; } /* Indigo-600 */
+        .corporate-pink-text { color: #EC4899; } /* Pink-500 */
+        .corporate-blue-bg { background-color: #4338CA; } /* Indigo-700 */
+        .corporate-pink-bg { background-color: #DB2777; } /* Pink-600 */
+
+        .example-list {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        .example-list li {
+            margin-bottom: 0.5rem;
+        }
+        .text-hero { font-size: 2.5rem; line-height: 1.2; } 
+        .text-title { font-size: 2rem; line-height: 1.2; } 
+        .text-subtitle { font-size: 1.25rem; line-height: 1.4; } 
+        .text-body { font-size: 1rem; line-height: 1.6; } 
+        .text-small { font-size: 0.875rem; line-height: 1.5; } 
+
+        @media (min-width: 768px) {
+            .text-hero { font-size: 3.75rem; } 
+            .text-title { font-size: 2.75rem; } 
+            .text-subtitle { font-size: 1.5rem; } 
+            .text-body { font-size: 1.125rem; } 
+        }
+        .firmavb-logo {
+            max-width: 250px; /* Adjust as needed */
+            height: auto;
+            margin-top: 1rem; 
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <div class="presentation-container mx-auto max-w-5xl w-full">
+        <div id="slide1" class="slide active bg-gradient-to-br from-indigo-700 via-pink-600 to-purple-700 text-white p-6 md:p-12 rounded-lg shadow-2xl">
+            <div class="text-center">
+                <h1 class="text-hero font-bold mb-4">FirmaVB 2025: ¡Desata Tu Potencial, Multiplica Tus Ingresos!</h1>
+                <p class="text-subtitle opacity-90">La Oportunidad de Crecer Vendiendo y Creando Tu Propia Red de Éxito.</p>
+                <img src="PHOTO-2025-05-08-15-57-57.jpg" alt="Logo FirmaVB" class="firmavb-logo mx-auto">
+            </div>
+        </div>
+
+        <div id="slide2" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-indigo-400">El Momento es AHORA. La Oportunidad es FIRMAVB.</h2>
+                <ul class="text-body space-y-4 text-left max-w-2xl mx-auto custom-list pl-5">
+                    <li>En FirmaVB, creemos en tu espíritu emprendedor y <span class="font-semibold text-pink-400">tienes el poder en tus manos.</span></li>
+                    <li>Nuestro plan de recompensas está diseñado para tu MÁXIMO crecimiento: <span class="font-semibold text-green-400">¡Mientras más postulas y adjudicas, más ganas!</span></li>
+                    <li>Fomentamos tu <span class="font-semibold text-indigo-300">autogestión</span> y el <span class="font-semibold text-indigo-300">trabajo cooperativo</span>: Si recomiendas y armas tu familia FirmaVB, <span class="font-semibold text-pink-400">¡también ganas y crecen juntos!</span></li>
+                    <li>Este 2025, no solo venderás, ¡construirás un legado de éxito compartido!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide3" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-pink-400">¡Tus Ventas, Tu Ganancia Directa! Así Recompensamos Tu Esfuerzo. 💰</h2>
+                <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto text-left">
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">Oficina</h3>
+                        <p class="text-body">Margen 10% ➔ <span class="font-bold text-2xl text-green-400">¡GANA 5% de Premio!</span></p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">Ergonomía</h3>
+                        <p class="text-body">Margen 15% ➔ <span class="font-bold text-2xl text-green-400">¡GANA 5% de Premio!</span></p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">Mobiliario</h3>
+                        <p class="text-body">Margen 20% ➔ <span class="font-bold text-2xl text-green-400">¡GANA 7% de Premio!</span></p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md border-2 border-pink-500">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">Desechables 🌟</h3>
+                        <p class="text-body">Margen 25% ➔ <span class="font-bold text-2xl text-green-400">¡GANA 10% de Premio!</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide4" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-pink-400">¡Premios Únicos para los que Van por MÁS! 🏆</h2>
+                <div class="space-y-6 max-w-2xl mx-auto">
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-400 mb-2">🚀 Kick-Off Imparable (Mes 1)</h3>
+                        <p class="text-body"><span class="font-bold text-green-400">$200.000 CLP</span> extra al postular $700MM netos. ¡Un inicio explosivo!</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-400 mb-2">🧾 Rey/Reina de las Órdenes de Compra (Mes 2)</h3>
+                        <p class="text-body"><span class="font-bold text-green-400">$200.000 CLP</span> adicionales con solo 2 OCs elegibles. ¡Consistencia que paga!</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-400 mb-2">📈 Maestría en Margen (Desde Mes 3)</h3>
+                        <p class="text-body"><span class="font-bold text-green-400">$200.000 CLP</span> más al alcanzar $1MM de margen. ¡Domina tu rentabilidad!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide5" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-indigo-400">Domina Tu Territorio: Ticket Mínimo por Zona 🗺️</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto text-body">
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">Coquimbo:</span> $800k</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">Valparaíso:</span> $400k <span class="text-sm opacity-80">(Limache: $100k)</span></div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">RM/OH:</span> $400k</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">Maule/Ñuble:</span> $800k</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">BioBío/Araucanía/Los Ríos:</span> $1MM</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow"><span class="font-semibold">Los Lagos:</span> $1.5MM</div>
+                </div>
+                <p class="mt-8 text-subtitle text-pink-400">"Conoce tu meta, ¡supérala y maximiza tus premios!"</p>
+            </div>
+        </div>
+
+        <div id="slide6" class="slide bg-gradient-to-r from-pink-600 to-purple-700 text-white p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-6">Más Allá de Tus Ventas: ¡Construye Tu Imperio con el "Plus de Red"! 🤝</h2>
+                <p class="text-subtitle mb-4">¿Imaginas ganar mientras otros también ganan gracias a ti? ¡Es posible!</p>
+                <div class="bg-black bg-opacity-20 p-6 rounded-lg inline-block">
+                    <h3 class="text-2xl font-semibold mb-2">Presentamos el "Plus de Red":</h3>
+                    <p class="text-body text-yellow-300 text-3xl font-bold">Ganas un 3% ADICIONAL</p>
+                    <p class="text-body">del margen generado por cada vendedor directo que TÚ reclutes.</p>
+                </div>
+                <p class="text-subtitle mt-6">"No solo vendes, ¡te conviertes en un LÍDER que inspira, multiplica el éxito y construye su familia FirmaVB!"</p>
+            </div>
+        </div>
+
+        <div id="slide7" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-pink-400">Reclutar es Crecer: Beneficios de Expandir Tu Red FirmaVB ✨</h2>
+                <ul class="text-body space-y-3 max-w-2xl mx-auto text-left custom-list pl-5">
+                    <li><span class="font-semibold text-indigo-300">Ingresos Pasivos:</span> Gana continuamente por el esfuerzo de tu red. ¡Tu cuenta crece incluso mientras duermes! 🏦</li>
+                    <li><span class="font-semibold text-indigo-300">Impacto Multiplicado:</span> Ayuda a otros a alcanzar sus metas y crea una ola de éxito. 🌊</li>
+                    <li><span class="font-semibold text-indigo-300">Liderazgo y Reconocimiento:</span> Posiciónate como un referente y mentor dentro de FirmaVB. 🌟</li>
+                    <li><span class="font-semibold text-indigo-300">Comunidad y Trabajo Cooperativo:</span> Crea tu "familia" FirmaVB, comparte estrategias, apóyense mutuamente y celebren los éxitos juntos. 👨‍👩‍👧‍👦</li>
+                    <li><span class="font-semibold text-indigo-300">Mayor Alcance, Mayores Oportunidades:</span> Una red más grande abre puertas a clientes y mercados más amplios. 🌐</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="slide8" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-6 text-pink-400">¡Así se Ve el Éxito en Acción! (Ejemplos Reales) 💡</h2>
+                <div class="space-y-6 text-left max-w-3xl mx-auto text-body">
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">A. Camila, Estrella de Desechables (Individual)</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-2">
+                            <li>Vende Desechables con margen de <code class="bg-gray-600 px-1 rounded">$3MM</code>.</li>
+                            <li>Premio Personal (10%): <code class="text-green-400 font-bold">$300.000</code>.</li>
+                            <li>Si cumple Premio OC (Mes 2): <code class="text-green-400 font-bold">+$200.000</code>.</li>
+                            <li class="font-bold">¡Camila podría ganar <span class="text-2xl text-green-300">$500.000!</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">B. Diego y César (Vendedor y Reclutador)</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-2">
+                            <li>Diego (vendedor): Mobiliario (<code class="bg-gray-600 px-1 rounded">$1MM</code> margen) + Ergonomía (<code class="bg-gray-600 px-1 rounded">$0.6MM</code> margen).</li>
+                            <li>Premios Personales Diego: <code class="text-green-400 font-bold">$70.000</code> + <code class="text-green-400 font-bold">$30.000</code> = <code class="text-green-400 font-bold">$100.000</code>.</li>
+                            <li>César (reclutador de Diego) gana por Plus de Red (3% de <code class="bg-gray-600 px-1 rounded">$1.6MM</code>): <span class="font-bold text-xl text-green-300">¡$48.000 para César!</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow border-2 border-pink-500">
+                        <h3 class="text-xl font-semibold text-indigo-300 mb-2">D. Laura, Líder de Equipo (¡Construyendo su Familia!)</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-2">
+                            <li>Laura recluta a Carlos (<code class="bg-gray-600 px-1 rounded">$1MM</code> margen), Valentina (<code class="bg-gray-600 px-1 rounded">$1.5MM</code> margen), Javier (<code class="bg-gray-600 px-1 rounded">$800k</code> margen).</li>
+                            <li>Ganancias de Laura por Plus de Red:
+                                <ul class="list-disc list-inside ml-4">
+                                    <li>Carlos: <code class="text-green-400 font-bold">$30.000</code></li>
+                                    <li>Valentina: <code class="text-green-400 font-bold">$45.000</code></li>
+                                    <li>Javier: <code class="text-green-400 font-bold">$24.000</code></li>
+                                </ul>
+                            </li>
+                            <li class="font-bold">¡Laura gana <span class="text-2xl text-green-300">$99.000</span> ESTE MES solo por su equipo! (Más sus ventas)</li>
+                        </ul>
+                    </div>
+                     <div class="bg-red-700 bg-opacity-60 p-4 rounded-lg shadow"> 
+                        <h3 class="text-xl font-semibold text-red-300 mb-2">⚠️ Aprendizaje Clave (Ejemplo Ana)</h3>
+                        <p>Ana vende Oficina por <code class="bg-gray-600 px-1 rounded">$350k</code> en Viña. Ticket mínimo Valparaíso: <code class="bg-gray-600 px-1 rounded">$400k</code>. Resultado: <span class="font-bold text-red-400">$0</span>. ¡Atención a los tickets mínimos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide9" class="slide bg-gradient-to-br from-indigo-700 via-indigo-800 to-gray-900 text-white p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-4">MercadoPúblico.cl: ¡Un Universo de Oportunidades para Ti! 🇨🇱</h2>
+                <p class="text-subtitle mb-6">El Estado es el Comprador Más Grande de Chile y <span class="font-semibold text-pink-400">TÚ Puedes Ser Parte Fundamental.</span></p>
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg shadow-lg mb-6">
+                    <p class="text-2xl md:text-3xl font-bold">Más de <span class="data-highlight text-4xl md:text-5xl">US$ 16 MIL MILLONES</span></p>
+                    <p class="text-xl md:text-2xl">transados en 2023 a través de MercadoPúblico.cl.</p>
+                    <p class="text-sm mt-1">(Fuente: ChileCompra)</p>
+                </div>
+                <p class="text-body">Imagina el potencial de adjudicar una fracción de este volumen. ¡Con FirmaVB, es posible!</p>
+            </div>
+        </div>
+
+        <div id="slide10" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-indigo-400">Modalidades Clave en MercadoPúblico: ¡FirmaVB te Guía! 🔑</h2>
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left text-body">
+                    <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-pink-400 mb-2">📄 Licitaciones Públicas</h3>
+                        <p>Miles de oportunidades publicadas constantemente. ¡Tu puerta a grandes proyectos y contratos con el Estado!</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-pink-400 mb-2">🛒 Convenio Marco</h3>
+                        <p>Accede a la tienda virtual del Estado. Un canal directo para ofrecer tus productos de forma estandarizada. (<span class="data-highlight">~US$1.500M</span> transados en 2021, referencial).</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-pink-400 mb-2">⚡ Compra Ágil</h3>
+                        <p>¡Procesos simplificados ahora hasta <span class="data-highlight">100 UTM</span> (aprox. $6.7M CLP)! Prioridad para Empresas de Menor Tamaño (EMT). ¡Las ventas de EMT aquí <span class="data-highlight">triplican</span> su participación en la economía nacional!</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-subtitle text-indigo-300">FirmaVB te asesorará para navegar y tener éxito en cada una de estas modalidades.</p>
+            </div>
+        </div>
+
+        <div id="slide11" class="slide bg-gradient-to-r from-indigo-700 to-pink-700 text-white p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-6">Tu Estrategia Ganadora en MercadoPúblico con FirmaVB 🚀</h2>
+                <p class="text-subtitle mb-6">¡Juntos conquistaremos el mercado público! Te apoyamos con:</p>
+                <ul class="text-body space-y-3 max-w-2xl mx-auto text-left custom-list pl-5" style="--checkmark-color: #FBBF24;"> 
+                    <li><span class="font-semibold text-yellow-300">Esfuerzo y Dedicación Conjunta:</span> Identificamos y trabajamos las mejores oportunidades contigo.</li>
+                    <li><span class="font-semibold text-yellow-300">Asesoría Experta y Personalizada:</span> Te guiamos paso a paso en los procesos de postulación y gestión de contratos.</li>
+                    <li><span class="font-semibold text-yellow-300">Parrilla de Productos Potente:</span> Oferta competitiva y alineada con las necesidades del Estado (Convenio Marco, Licitaciones, etc.).</li>
+                    <li><span class="font-semibold text-yellow-300">Canal Multinivel Estratégico:</span> Maximizamos tu alcance y potencial de ganancias al abordar MercadoPúblico.</li>
+                    <li><span class="font-semibold text-yellow-300">Proactividad y Planificación:</span> Analizamos el Plan Anual de Compras (PAC) de las instituciones para anticiparnos a sus necesidades.</li>
+                </ul>
+                <p class="text-subtitle mt-8">¡Con tu <span class="font-semibold">autogestión</span>, nuestra <span class="font-semibold">asesoría</span> y el <span class="font-semibold">trabajo cooperativo</span>, las oportunidades en MercadoPúblico son ilimitadas!</p>
+            </div>
+        </div>
+
+        <div id="slide12" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-indigo-400">No Estás Solo: FirmaVB Te Respalda en Cada Paso. 🛠️</h2>
+                <p class="text-subtitle mb-4">Además del apoyo específico en MercadoPúblico, cuentas con:</p>
+                <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto text-body">
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">🤝 Capacitación continua.</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">🎨 Material de marketing profesional.</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">💬 Comunidad de vendedores.</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow">💡 Soporte dedicado.</div>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow md:col-span-2">💻 Plataforma intuitiva.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide13" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
+            <div class="text-center slide-content-wrapper">
+                <h2 class="text-title font-bold mb-8 text-pink-400">¿Preguntas? ¡Estamos Aquí para Ayudarte a Triunfar! 💬</h2>
+                <p class="text-subtitle mb-4">Este es tu espacio para resolver cualquier duda.</p>
+                <div class="text-body space-y-2">
+                    <p>Email de Soporte: <a href="mailto:soporte@firmavb.com" class="text-indigo-400 hover:underline">soporte@firmavb.com</a></p>
+                    <p>Responsable: [Nombre del Responsable]</p>
+                    <p>Grupo de WhatsApp: [Enlace o Nombre del Grupo]</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide14" class="slide bg-gradient-to-br from-indigo-800 via-gray-900 to-black text-white p-6 md:p-12 rounded-lg shadow-2xl">
+            <div class="text-center">
+                <h2 class="text-hero font-bold mb-6">El Límite lo Pones TÚ.</h2>
+                <p class="text-title mb-8 text-pink-400">¡Vamos por un 2025 EXTRAORDINARIO!</p>
+                <blockquote class="text-subtitle italic opacity-90 mb-8 max-w-2xl mx-auto">
+                    "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito." - Albert Schweitzer
+                </blockquote>
+                <p class="text-2xl font-semibold">¡Gracias por tu energía y compromiso!</p>
+                <img src="PHOTO-2025-05-08-15-57-57.jpg" alt="Logo FirmaVB" class="firmavb-logo mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-controls fixed bottom-0 left-0 right-0 bg-gray-900 bg-opacity-80 p-3 md:p-4 flex justify-center items-center space-x-3 md:space-x-4 z-50">
+        <button id="prevBtn" class="nav-button bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md text-sm md:text-base">Anterior</button>
+        <span id="slideCounter" class="text-gray-300 text-sm md:text-base">Diapositiva 1 / 14</span>
+        <button id="nextBtn" class="nav-button bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md text-sm md:text-base">Siguiente</button>
+    </div>
+
+    <script>
+        // Lógica de JavaScript para la navegación entre diapositivas
+        let currentSlide = 1;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length; 
+        const slideCounterElement = document.getElementById('slideCounter');
+
+        // Función para actualizar el contador de diapositivas
+        function updateSlideCounter() {
+            if (slideCounterElement) {
+                slideCounterElement.textContent = `Diapositiva ${currentSlide} / ${totalSlides}`;
+            }
+        }
+
+        // Función para mostrar una diapositiva específica
+        function showSlide(slideNumber) {
+            // Ocultar todas las diapositivas
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            // Mostrar la diapositiva objetivo
+            const targetSlide = document.getElementById('slide' + slideNumber);
+            if (targetSlide) {
+                targetSlide.classList.add('active');
+                // Para la diapositiva 11, cambiar el color del checkmark dinámicamente si es necesario, sino usar el predeterminado
+                const customList = targetSlide.querySelector('.custom-list');
+                if (customList) { // Verificar si customList existe
+                    if (slideNumber === 11) {
+                        customList.style.setProperty('--checkmark-color', '#FBBF24'); // Amarillo para la diapositiva 11
+                    } else {
+                        customList.style.setProperty('--checkmark-color', '#EC4899'); // Rosa predeterminado para otras diapositivas
+                    }
+                }
+            }
+            // Actualizar el estado de los botones
+            document.getElementById('prevBtn').disabled = slideNumber === 1;
+            document.getElementById('nextBtn').disabled = slideNumber === totalSlides;
+            updateSlideCounter();
+        }
+
+        // Event listener para el botón "Siguiente"
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Event listener para el botón "Anterior"
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+        
+        // Navegación con teclado (Flecha Derecha, Espacio para siguiente; Flecha Izquierda para anterior)
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' || event.key === ' ') { 
+                 if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            } else if (event.key === 'ArrowLeft') {
+                if (currentSlide > 1) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            }
+        });
+
+        // Inicializar la primera diapositiva y el contador al cargar la página
+        if (slides.length > 0) {
+            showSlide(currentSlide); // Mostrar la primera diapositiva y establecer el estado de los botones
+        } else {
+            // Manejar el caso donde no hay diapositivas (ej. ocultar navegación)
+            document.getElementById('prevBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'none';
+            if(slideCounterElement) slideCounterElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
