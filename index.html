@@ -83,6 +83,15 @@
             height: auto;
             margin-top: 1rem; 
         }
+        /* Style for contact links */
+        .contact-link {
+            color: #60A5FA; /* Tailwind blue-400 */
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        .contact-link:hover {
+            color: #93C5FD; /* Tailwind blue-300 */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
@@ -313,11 +322,17 @@
         <div id="slide13" class="slide bg-gray-800 text-gray-100 p-6 md:p-12 rounded-lg shadow-xl">
             <div class="text-center slide-content-wrapper">
                 <h2 class="text-title font-bold mb-8 text-pink-400">¿Preguntas? ¡Estamos Aquí para Ayudarte a Triunfar! 💬</h2>
-                <p class="text-subtitle mb-4">Este es tu espacio para resolver cualquier duda.</p>
-                <div class="text-body space-y-2">
-                    <p>Email de Soporte: <a href="mailto:soporte@firmavb.com" class="text-indigo-400 hover:underline">soporte@firmavb.com</a></p>
-                    <p>Responsable: [Nombre del Responsable]</p>
-                    <p>Grupo de WhatsApp: [Enlace o Nombre del Grupo]</p>
+                <p class="text-subtitle mb-6">Este es tu espacio para resolver cualquier duda y conectar:</p>
+                <div class="text-body space-y-4 max-w-lg mx-auto">
+                    <div>
+                        <p class="font-semibold text-indigo-300">Coordinadora de Red:</p>
+                        <p>Mary Dominguez</p>
+                        <p>Email: <a href="mailto:cm@firmavb.cl" class="contact-link">cm@firmavb.cl</a></p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-indigo-300">Únete a nuestro Grupo de WhatsApp:</p>
+                        <a href="https://chat.whatsapp.com/KBvTIekPeTPDDvDnsEKxvM" target="_blank" class="contact-link break-all">https://chat.whatsapp.com/KBvTIekPeTPDDvDnsEKxvM</a>
+                    </div>
                 </div>
             </div>
         </div>
